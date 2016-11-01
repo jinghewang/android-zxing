@@ -393,6 +393,9 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
       if (itemNumber >= 0) {
         HistoryItem historyItem = historyManager.buildHistoryItem(itemNumber);
         decodeOrStoreSavedBitmap(null, historyItem.getResult());
+
+        //toast
+        Toast.makeText(this, historyItem.getResult().getText(), Toast.LENGTH_SHORT).show();
       }
     }
   }
@@ -444,6 +447,10 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
   public void handleDecode(Result rawResult, Bitmap barcode, float scaleFactor) {
     inactivityTimer.onActivity();
     lastResult = rawResult;
+
+    //toast
+    this.showToast(rawResult.getText());
+
     ResultHandler resultHandler = ResultHandlerFactory.makeResultHandler(this, rawResult);
 
     boolean fromLiveScan = barcode != null;
@@ -479,6 +486,10 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         }
         break;
     }
+
+    //退出
+    this.finish();
+
   }
 
   /**
@@ -763,5 +774,11 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
   public void drawViewfinder() {
     viewfinderView.drawViewfinder();
+  }
+
+
+
+  public void showToast(String msg) {
+    Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
   }
 }

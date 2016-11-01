@@ -1,26 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/hbd/Downloads/android/app/libs/core-3.3.1.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="f1c4d3fe86bdf65ac868debfabff6665317bb450">
-        <dex dex="/Users/hbd/Downloads/android/app/build/intermediates/transforms/dex/debug/folders/1000/2/core-3.3.1_c003975dbfc366ba4f138c220ada96b6d243a88b/classes.dex" />
-    </item>
-    <item
-        jar="/Users/hbd/Downloads/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="abfd6236be2e8e704ed0f7ffecdb4c8ff5927bbb">
-        <dex dex="/Users/hbd/Downloads/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_488f9cf740223eacee321430f9429077033b6653/classes.dex" />
-    </item>
-    <item
-        jar="/Users/hbd/Downloads/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="4c69c2c1bfb6f909898887a0e35e2dcaeec6b351">
-        <dex dex="/Users/hbd/Downloads/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_2e37a3e3387011d90c4c748b7d76b03480ec813a/classes.dex" />
-    </item>
-
-</items>
+<items version="2" />
