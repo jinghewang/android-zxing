@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/hbd/Downloads/android/app/build/intermediates/res/merged/debug/menu/history.xml",
+        "source": "/Users/hbd/Downloads/android/app/src/main/res/menu/history.xml"
+    },
+    {
+        "merged": "/Users/hbd/Downloads/android/app/build/intermediates/res/merged/debug/menu/capture.xml",
+        "source": "/Users/hbd/Downloads/android/app/src/main/res/menu/capture.xml"
+    },
+    {
+        "merged": "/Users/hbd/Downloads/android/app/build/intermediates/res/merged/debug/menu/encode.xml",
+        "source": "/Users/hbd/Downloads/android/app/src/main/res/menu/encode.xml"
+    }
+]
