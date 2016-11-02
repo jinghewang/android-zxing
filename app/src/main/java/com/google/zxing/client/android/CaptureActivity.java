@@ -488,6 +488,9 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     }
 
     //退出
+    Intent intent = new Intent();
+    intent.putExtra("result",rawResult.getText());
+    this.setResult(1,intent);
     this.finish();
 
   }

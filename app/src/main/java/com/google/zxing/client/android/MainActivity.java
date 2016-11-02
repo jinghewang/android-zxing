@@ -25,7 +25,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.btn_open:
                 Intent intent = new Intent(this,CaptureActivity.class);
-                startActivity(intent);
+                startActivityForResult(intent,0);
                 showToast(((Button) view).getText().toString());
                 break;
 
@@ -37,6 +37,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //super.onActivityResult(requestCode, resultCode, data);
+        String result = data.getStringExtra("result");
+        showToast("result:---->" + result);
+    }
 
     public void showToast(String msg) {
         Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
